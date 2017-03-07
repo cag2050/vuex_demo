@@ -4,16 +4,19 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-    count: 0
+    count: 0,
+    msg: null
 }
 
 // mutations里写函数怎样影响state
 const mutations = {
     increment(state) {
         state.count = state.count + 1
+        state.msg = '已经加1'
     },
     decrement(state) {
         state.count = state.count - 1
+        state.msg = '已经减1'
     }
 }
 
